@@ -90,14 +90,14 @@ def infer_slice(img,model, scale_factor):
         img_enlarged,
         slice_height=1024,
         slice_width=1024,
-        overlap_height_ratio=0.5,
-        overlap_width_ratio=0.5
+        overlap_height_ratio=0.25, # 0.25,
+        overlap_width_ratio=0.25 # 0.25
     )
 
     # Perform inference on the slices
     slice_results = []
     start = 0
-    batch_size = 4
+    batch_size = 8
     small_shape = (round(img.shape[0]/scale_factor),
                    round(img.shape[1]/scale_factor), img.shape[2])
     while True:

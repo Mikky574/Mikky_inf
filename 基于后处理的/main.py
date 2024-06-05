@@ -13,8 +13,8 @@ from process_ import (
 )
 
 # 初始化模型
-config_file = r'C:\Users\Mikky\Desktop\树冠数据集\USIS10K\work_dirs\USIS10KDataset_2\base\multiclass_usis_train.py'
-checkpoint_file = r'C:\Users\Mikky\Desktop\树冠数据集\USIS10K\work_dirs\USIS10KDataset_2\base\epoch_30.pth'
+config_file = r'C:\Users\Mikky\Desktop\树冠数据集\USIS10K\work_dirs\USIS10KDataset\huge\multiclass_usis_train_huge.py'
+checkpoint_file = r'C:\Users\Mikky\Desktop\树冠数据集\USIS10K\work_dirs\USIS10KDataset\huge\epoch_9.pth'
 model = init_detector(config_file, checkpoint_file, device='cuda:0')
 
 # 图片文件夹路径
